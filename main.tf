@@ -4,6 +4,7 @@ provider "google" {
   project = "tf-1-354422"
   region  = "us-central1"
   zone    = us-central1-c
+  #Clone, Save, Change+, Stage, Commit, Push 
 }
 resource "google_compute_instance" "terraform-pj-svc-4" {
   name         = "terraform-pj-svc-4"
