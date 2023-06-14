@@ -3,7 +3,11 @@ provider "google" {
   credentials = file("tf-1-354422-30266c84178e.json")
   project = "tf-1-354422"
   region  = "us-central1"
-  zone    = "us-central1-c"
+  #zone    = "us-central1-c"
+  zone    = "us-west1-a"
+  ## 
+  ###
+  ####
 }
 resource "google_compute_instance" "terraform-pj-svc-4" {
   name         = "terraform-pj-svc-4"
