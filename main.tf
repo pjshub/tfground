@@ -5,6 +5,7 @@ provider "google" {
   region  = "us-central1"
   zone    = "us-central1-c"
   ## 
+  ###
 }
 resource "google_compute_instance" "terraform-pj-svc-4" {
   name         = "terraform-pj-svc-4"
