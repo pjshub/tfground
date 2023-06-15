@@ -1,9 +1,9 @@
 ## This code works from Cloud Shell
 provider "google" {
-  credentials = file("tf-1-354422-30266c84178e.json")
+  credentials = file("../tf-1-354422-key.json")
   project = "tf-1-354422"
   region  = "us-central1"
-  zone    = us-central1-c
+  zone    = "us-central1-c"
   #Clone, Save, Change+, Stage, Commit, Push 
   ##
 }
@@ -20,4 +20,10 @@ resource "google_compute_instance" "terraform-pj-svc-4" {
     access_config {
     }
   }
+}
+resource "google_storage_bucket" "default" {
+  name = "pj-my-bucket"
+  location = "US"
+  storage_class = "STANDARD"
+  uniform_bucket_level_access = true
 }
