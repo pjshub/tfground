@@ -1,6 +1,6 @@
 ## This code works from Cloud Shell
 provider "google" {
-  credentials = file("../tf-1-354422-key.json")
+  credentials = file("../sakeys/tf-1-354422-key.json")
   project = "tf-1-354422"
   region  = "us-central1"
   zone    = "us-central1-c"
