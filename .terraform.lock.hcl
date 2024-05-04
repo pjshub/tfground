@@ -5,6 +5,7 @@ provider "registry.terraform.io/hashicorp/google" {
   version = "4.69.1"
   hashes = [
     "h1:1gL+RjCWfdfAIm3z817ha0IHLfFYz4V+TR/Bfv8hj5w=",
+    "h1:K6UoVfIBCZA/kQme+knXCLe6VmWfo8TF5OUae/0tw0Y=",
     "zh:01a055d6aa2392ca31bdbfa9c41b80e6a9cdd8afd14301b0bac2588ecc394a02",
     "zh:02418f1904d9c125a6b07790776ce8667ba5a54a790cf2322dd129b54099f410",
     "zh:113d5c95a71d29a2ab081067a40abb8327994ca8f03e3a40f85b24b19460bba6",

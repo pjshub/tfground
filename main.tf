@@ -28,3 +28,9 @@ resource "google_storage_bucket" "default" {
   storage_class = "STANDARD"
   uniform_bucket_level_access = true
 }
+resource "google_storage_bucket" "default" {
+  name = "pj-my-bucket2"
+  location = "US"
+  storage_class = "STANDARD"
+  uniform_bucket_level_access = true
+}
