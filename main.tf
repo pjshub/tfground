@@ -9,7 +9,7 @@ provider "google" {
   ##
 }
 resource "google_compute_instance" "terraform-pj-svc-4" {
-  name         = "terraform-pj-svc-42"
+  name         = "terraform-pj-svc-412"
   machine_type = "n1-standard-2"
   boot_disk {
     initialize_params {
