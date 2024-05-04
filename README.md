@@ -29,3 +29,16 @@ Secret Key to TF Deploy service account for my Dragonfly is located here
 drwxr-xr-x 1 pjoura pjoura  206 May  3 23:55 tfground
 -rw-r--r-- 1 pjoura pjoura 2353 May  4 00:00 tf-1-354422-key..json
 ##
+
+# As of May4th 2024 STEPS FOR commiting Local Code, Mergin to Remote branch , Creating & Approving a PR on Github Web, Fetching from Remote Main to Local main again
+  git checkout Feature-update
+  git add . 
+  git commit -m "dragonfly ##4"
+  git push origin Feature-update
+  go to Github.com. Create a new Pull Request and assign an approver.Here head should be the sub-branch the Feature-Update and base should the main branch. Approver approves the PR and it gets merged to remove main. 
+  
+  git fetch origin main    --This first step is to fetch the latest changes from the remote repository, including the updated main branch, without merging them yet.
+  
+  git checkout main
+  git merge origin/main   -- This creates a new merge commit on your local main branch that combines your previous work with the changes from the remote.
+  # Read this Gemini explanation https://g.co/gemini/share/e1db336b9527
