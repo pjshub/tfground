@@ -1,5 +1,11 @@
 ## This code works from Cloud Shell
 ## Test for DragonFly
+terraform {
+  backend "gcs" {
+    bucket  = "tf-1-terraform-state-bucket"
+    prefix  = "myproject/environment"  # Optional for organization
+  }
+}
 provider "google" {
   credentials = file("../sakeys/tf-1-354422-key.json")
   project = "tf-1-354422"
