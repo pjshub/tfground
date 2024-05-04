@@ -41,4 +41,4 @@ drwxr-xr-x 1 pjoura pjoura  206 May  3 23:55 tfground
   
   git checkout main
   git merge origin/main   -- This creates a new merge commit on your local main branch that combines your previous work with the changes from the remote.
-  # Read this Gemini explanation https://g.co/gemini/share/e1db336b9527
+  ## Read this Gemini explanation https://g.co/gemini/share/e1db336b9527
