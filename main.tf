@@ -29,7 +29,13 @@ resource "google_compute_instance" "terraform-pj-svc-4" {
   }
 }
 resource "google_storage_bucket" "default" {
-  name = "pj-my-buckettttx"
+  name = "pj-my-bucket-1"
+  location = "US"
+  storage_class = "STANDARD"
+  uniform_bucket_level_access = true
+}
+resource "google_storage_bucket-2" "default" {
+  name = "pj-my-bucket-2"
   location = "US"
   storage_class = "STANDARD"
   uniform_bucket_level_access = true
