@@ -3,7 +3,7 @@
 terraform {
   backend "gcs" {
     bucket  = "tf-1-terraform-state-bucket"
-    prefix  = "myproject/environment"  # Optional for organization
+    prefix  = "tf-1-state-bucket/prod"  # Optional for organization
   }
 }
 provider "google" {
