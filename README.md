@@ -9,7 +9,7 @@ Multiple Ways to Autheticate
     cat `echo ${GOOGLE_CLOUD_KEYFILE_JSON}`
 4. If credentials variable is configured in main.tf OR environment variable is set up at the prompt as in steps 8.3.1 - it would override pjoura@
 
-# Steps to Check-In new code , git commands
+## Steps to Check-In new code , git commands
 NOTE: Here vpcsc-fr1 is the feature branch name
 0.  Ensure your feature branch is checked out git checkout <brancg-name> 
 1.  Make the edits you would like
@@ -26,28 +26,15 @@ NOTE: Here vpcsc-fr1 is the feature branch name
 0. Checkout you local branch, let's say FeatureBranch
 1. update your file, git add. , git commmit -m "give some comment"
 2. Test your code, if its good - git push origin FeatureBranch
+
 Now your code is in sync on FeatureBranch locally and remote FeatureBranch. Here you have 3 options
 A. On github web, open a PR request and merge to main. Doing so will bring Main to same level as FeatureBranch. But now your local main and Remote main are out-of-sync. If you want them in sync, you need to git checkout main ( locally), git fetch origin main, git merge origin/main (this is recommended when working in teams)
 B. Instead of doing openning a PR on Github Web, you can first merge the code to local main and then push it to remote main. Commands: locally: git checkout main, git merge FeatureBrach, git push origin main. Thiis is useful when working individually & not in teams
 C. When working in teams, another developer might need to test the code in their local branch.
  Commands: git fetch origin , git checkout -b pr/FeatureBranch origin/FeatureBranch
- Gemini link: https://g.co/gemini/share/4cce337ffa29
+ Gemini link: https://g.co/gemini/share/4cce337ffa29,https://g.co/gemini/share/e1db336b9527
 ## Testing DragonFly ##
 Secret Key to TF Deploy service account for my Dragonfly is located here
 ❯ /home/pjoura/pjs_tfground
 drwxr-xr-x 1 pjoura pjoura  206 May  3 23:55 tfground
 -rw-r--r-- 1 pjoura pjoura 2353 May  4 00:00 tf-1-354422-key..json
-##
-
-# As of May4th 2024 STEPS FOR commiting Local Code, Mergin to Remote branch , Creating & Approving a PR on Github Web, Fetching from Remote Main to Local main again
-  git checkout Feature-update
-  git add . 
-  git commit -m "dragonfly ##4"
-  git push origin Feature-update
-  go to Github.com. Create a new Pull Request and assign an approver.Here head should be the sub-branch the Feature-Update and base should the main branch. Approver approves the PR and it gets merged to remove main. 
-  
-  git fetch origin main    --This first step is to fetch the latest changes from the remote repository, including the updated main branch, without merging them yet.
-  
-  git checkout main
-  git merge origin/main   -- This creates a new merge commit on your local main branch that combines your previous work with the changes from the remote.
-  ## Read this Gemini explanation https://g.co/gemini/share/e1db336b9527
