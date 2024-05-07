@@ -22,7 +22,16 @@ NOTE: Here vpcsc-fr1 is the feature branch name
 8.  git merge vpcsc-fr1 -- This will merge (link) feature branch to main branch
 9.  < Now your Feature Branch and Main branch are out of sync on remote server>
 10. git push origin main -- This will sync the code between the 2 branches on the remote server%  
-
+## Steps to update the code in braches
+0. Checkout you local branch, let's say FeatureBranch
+1. update your file, git add. , git commmit -m "give some comment"
+2. Test your code, if its good - git push origin FeatureBranch
+Now your code is in sync on FeatureBranch locally and remote FeatureBranch. Here you have 3 options
+A. On github web, open a PR request and merge to main. Doing so will bring Main to same level as FeatureBranch. But now your local main and Remote main are out-of-sync. If you want them in sync, you need to git checkout main ( locally), git fetch origin main, git merge origin/main (this is recommended when working in teams)
+B. Instead of doing openning a PR on Github Web, you can first merge the code to local main and then push it to remote main. Commands: locally: git checkout main, git merge FeatureBrach, git push origin main. Thiis is useful when working individually & not in teams
+C. When working in teams, another developer might need to test the code in their local branch.
+ Commands: git fetch origin , git checkout -b pr/FeatureBranch origin/FeatureBranch
+ Gemini link: https://g.co/gemini/share/4cce337ffa29
 ## Testing DragonFly ##
 Secret Key to TF Deploy service account for my Dragonfly is located here
 ❯ /home/pjoura/pjs_tfground
