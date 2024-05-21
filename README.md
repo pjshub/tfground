@@ -27,6 +27,7 @@ NOTE: Here vpcsc-fr1 is the feature branch name
 1. update your file, git add. , git commmit -m "give some comment"
 2. Test your code, if its good - git push origin FeatureBranch
 
+
 Now your code is in sync on FeatureBranch locally and remote FeatureBranch. Here you have 3 options
 A. On github web, open a PR request and merge to main. Doing so will bring Main to same level as FeatureBranch. But now your local main and Remote main are out-of-sync. If you want them in sync, you need to git checkout main ( locally), git fetch origin main, git merge origin/main (this is recommended when working in teams)
 B. Instead of doing openning a PR on Github Web, you can first merge the code to local main and then push it to remote main. Commands: locally: git checkout main, git merge FeatureBrach, git push origin main. Thiis is useful when working individually & not in teams
