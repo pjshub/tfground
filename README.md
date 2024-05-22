@@ -11,7 +11,7 @@ Multiple Ways to Autheticate
 
 ## Steps to Check-In new code , git commands
 NOTE: Here vpcsc-fr1 is the feature branch name
-0.  Ensure your feature branch is checked out git checkout <brancg-name> 
+0.  Ensure your feature branch is checked out git checkout <branch-name> 
 1.  Make the edits you would like
 2.  git status
 3.  git add . 
