@@ -34,8 +34,8 @@ resource "google_storage_bucket" "bucket-1" {
   storage_class               = "STANDARD"
   uniform_bucket_level_access = true
 }
-resource "google_storage_bucket" "bucket-01" {
-  name                        = "pj-my-bucket-01"
+resource "google_storage_bucket" "bucket-2" {
+  name                        = "pj-my-bucket-2"
   location                    = "US"
   storage_class               = "STANDARD"
   uniform_bucket_level_access = true
