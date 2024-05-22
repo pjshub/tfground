@@ -1,5 +1,5 @@
-## tfground
-##pj's terraform playground
+# tfground
+# pj's terraform playground
 
 Multiple Ways to Autheticate 
 1. Using gcloud auth application default login on VS Code
